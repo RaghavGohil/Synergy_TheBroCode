@@ -70,13 +70,13 @@
     function showSidebar() {
         const sidebar = document.querySelector(".sidebar");
         const menu1 = document.getElementById("menu1");
-        sidebar.style.display = "block"
-        menu1.style.display = "none"
+        sidebar.style.visibility = "visible"
+        menu1.style.visibility = "hidden"
     }
     function hideSidebar() {
         const sidebar = document.querySelector(".sidebar");
-        sidebar.style.display = "none"
-        menu1.style.display = "block"
+        sidebar.style.visibility = "hidden"
+        menu1.style.visibility = "visible"
     }
 </script>
 

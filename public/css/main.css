@@ -147,7 +147,7 @@ html {
     bottom: 35%;
     right: 5%;
     cursor: pointer;
-    display: none;
+    visibility: hidden;
 }
 
 #side-menu1 {
@@ -175,9 +175,9 @@ html {
 } */
 @media(max-width: 750px) {
     .hideOnMobile {
-        display: none;
+        visibility: hidden;
     }
     #menu1 {
-        display: block;
+        visibility: visible;
     }
 }
