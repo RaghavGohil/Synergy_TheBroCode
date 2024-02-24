@@ -34,15 +34,8 @@
     padding: 10px;
     position: relative;
     z-index: 1;
-}
-
-#contact_sec h2{
-    padding-top: 10px;
-    text-align: center;
-}
-
-#contact_sec{
-    font-size: 30px;
+    background-image: url("/images/hero_img3.jpg");
+    color: #fff;
 }
 
 #about_us {
@@ -50,24 +43,61 @@
     font-size: 1.2rem;
     position: relative;
 }
-
-.contact-sec {
-    height: 100px;
+#contact_us{
+    background-image: url("/images/hero_img2.jpg");
     width: 100%;
+}
+
+#contact_us div{
+    padding: 20px;
+    font-size: 20px;
     display: flex;
-    align-items: center;
     justify-content: space-evenly;
 }
 
-.contact-icon {
-    display: flex;
-    justify-content: center;
-}
-
-.comtact-icon i {
+#contact_us h1{
     padding: 10px;
+    text-align: center;
+    font-size: 50px;
+    color: #fff;
 }
 
-.contact-icon a {
-    padding: 5px 3px;
+#contact_us iframe{
+    /* border: 2px solid #000; */
+    box-sizing: border-box;
+    display: block;
+    box-shadow: 2px #fff;
+}
+
+#contact_us div h2{
+    padding: 10px;
+    color: #fff;
+}
+
+#contact_us div div div a{
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#contact_us div div{
+    height: 12%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact_us div div ul{
+    /* padding-top: 5px; */
+}
+
+#contact_us div div ul li{
+    font-size: 30px;
+    display: inline;
+    text-decoration-style: none;
+    padding-inline: 5px;
+    color: white;
+}
+
+#contact_us i{
+    color: #fff;
 }
