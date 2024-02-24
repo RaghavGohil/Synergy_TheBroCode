@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const User = require('../models/userModel');
 
-const databaseUrl = process.env.DATABASE_URL;
+const databaseUrl = 'mongodb+srv://raghavgohil2004:hw5nch4c1m%40mongo@synergy.qimy4o3.mongodb.net/test';
 
 // connect to mongodb
 mongoose.connect(databaseUrl)

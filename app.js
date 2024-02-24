@@ -11,10 +11,11 @@ const { engine } = require('express-handlebars');
 
 //dotenv
 dotenv.config();
-const secretKey = process.env.SECRET_KEY;
+const secretKey = 'secret';
 
 // middlewares 
 app.use(express.static('public'));
+app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(expressSession({
   secret: secretKey,

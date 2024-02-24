@@ -8,7 +8,7 @@ router.get('/viewProject/:projectname', function(req, res) {
 })
 
 //multer
-router.get('/viewProject/hi', multerGet);
+router.get('/viewProject/:projectname', multerGet);
 router.post('/viewProject/:projectname', multerUpload.single('file'), multerPost);
 
 module.exports = router;
