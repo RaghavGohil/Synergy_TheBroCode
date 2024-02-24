@@ -1,8 +1,7 @@
 #hero {
     width: 100%;
     height: 100%;
-    position: absolute;
-    top: 0;
+    position: relative;
 }
 
 #hero img{
@@ -33,6 +32,8 @@
 
 #about_us{
     padding: 10px;
+    position: relative;
+    z-index: 1;
 }
 
 #contact_sec h2{
@@ -47,7 +48,7 @@
 #about_us {
     text-align: center;
     font-size: 1.2rem;
-
+    position: relative;
 }
 
 .contact-sec {
