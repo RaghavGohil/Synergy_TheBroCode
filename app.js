@@ -14,7 +14,9 @@ app.set('view engine', 'handlebars');
 app.set('views', path.join(__dirname,'views'));
 
 // routes
-app.use('/', require('./routes/home'));
-app.use('/', require('./routes/projects'));
+app.use('/', require('./routes/loginRoute'));
+app.use('/', require('./routes/homeRoute'));
+app.use('/', require('./routes/projectsRoute'));
+app.use('/', require('./routes/viewFileRoute'));
 
 app.listen(port,() => console.log(`Server is running at port${port}`));

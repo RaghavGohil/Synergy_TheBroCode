@@ -4,14 +4,19 @@
   "description": "Hackathon project for Synergy 2024 (SIGAI, ISACA, NSDC)",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "move-static": "cp -a ./node_modules/@pdftron/pdfjs-express/public/. ./dist/public/pdfjsexpress",
+    "build": "nodemon && npm run move-static"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@pdftron/pdfjs-express-viewer": "^8.7.4",
     "express": "^4.18.2",
     "express-handlebars": "^7.1.2",
-    "nodemon": "^3.1.0"
+    "nodemon": "^3.1.0",
+    "pdf-lib": "^1.17.1",
+    "pdfkit": "^0.14.0"
   }
 }
