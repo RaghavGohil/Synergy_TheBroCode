@@ -10,9 +10,11 @@ mongoose.connect(databaseUrl)
 module.exports.registerPost = async (req, res) => {
     try {
       const user = new User({
+        name: req.body.name,
+        phone: req.body.phone,
         username: req.body.username,
-        password: req.body.password,
         email: req.body.email,
+        password: req.body.password,
         isAdmin: false
       });
       await user.save();

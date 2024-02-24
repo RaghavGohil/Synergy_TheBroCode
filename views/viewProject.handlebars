@@ -7,9 +7,11 @@
   <input type="file" name="file">
   <button type="submit">Upload File</button>
 </form>
-<form method="get" action="/new/">
+<form method="get" action="/viewProject/">
   <button type="submit" id="submitButton">Get File</button>
 </form>
 <div id="viewer">
-    <embed src="/pdf/Synergy.pdf" type="application/pdf" width="100%" height="600px" />
+    {{path}}
+    {{fileType}}
+    <embed src={{path}} type={{fileType}} width="100%" height="600px" />
 </div>

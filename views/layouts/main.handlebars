@@ -29,8 +29,8 @@
                 <div class="nav-right">
                     <div class="nav-rig hideOnMobile">
                         <div class="login-icon"></div>
-                        <a href="/">Register</a>/
-                        <a href="/">Sign In</a>
+                        <a href="/register">Register</a>/
+                        <a href="/signIn">Sign In</a>
                     </div>
                     <li onclick=showSidebar() id="menu1"><i class="fa-solid fa-bars"></i></li>
                 </div>
@@ -51,8 +51,8 @@
                 </div>
                 <div class="side-right">
                     <div class="login-icon">
-                        <a href="/">Log In</a>/
-                        <a href="/">Sign In</a>
+                        <a href="/register">Register</a>/
+                        <a href="/signIn">Sign In</a>
                     </div>
                 </div>
         </nav>
@@ -66,9 +66,7 @@
 <script>
     function showSidebar() {
         const sidebar = document.querySelector(".sidebar");
-        const menu1 = document.getElementById("menu1");
-        sidebar.style.display = "block"
-        menu1.style.display = "none"
+        sidebar.style.display = "flex"
     }
     function hideSidebar() {
         const sidebar = document.querySelector(".sidebar");
