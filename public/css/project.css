@@ -1,40 +1,52 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
-#sidebar {
-    height: 100 px;
-    width:25%;
-    background-color: #333;
-    color: #fff;
-    padding-top: 20px;
-}
-
-/* #logo {
-    text-align: center;
-    margin-bottom: 20px;
-} */
-
-#menu {
-    list-style-type: none;
+*{
+    margin: 0;
     padding: 0;
-    text-align: center;
+   
+}
+#projlbar{
+    background-color: #000000c9;
 }
 
-#menu li {
-    margin-bottom: 10px;
+#projmenu{
+    /* color: beige; */
+    
+    margin-bottom: 25px;
 }
-
-#menu button {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    background-color: #444;
-    border: none;
-    color: #fff;
-    text-align: left;
+.projmenu1{
+    color: beige;
     text-decoration: none;
-    font-size: 16px;
-    cursor: pointer;
+    padding-left: 10px;
+    font-weight: 400;
 }
+#addproj{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(238, 240, 241);
+    color:black;
+    padding: 10px;
+    border-radius: 8px;
+    
+}
+.projsbar{
+    width: 40%;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    /* border: none; */
+}
+.projsbar::placeholder{
+    padding-left: 10px;
+}
+#psbar{
+    display: flex;
+    justify-content: center;
+    height: 70px;
+    margin-top: 5rem;
+    
+}
+#projsbtn{
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    width: 5rem;
 
-#menu button:hover {
-    background-color: #555;
 }
