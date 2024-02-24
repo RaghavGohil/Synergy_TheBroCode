@@ -39,14 +39,20 @@
             </div>
             <div class="sidebar">
                 <div class="side-left">
-                    <li onclick=hideSidebar() id="side-menu1"><i class="fa-solid fa-bars"></i></li>
+                    <li onclick=hideSidebar() id="side-menu"><i class="fa-solid fa-bars"></i></li>
                 </div>
                 <div class="side-mid">
                     <ul>
                         <li><a href="/">Home</a></li>
+<<<<<<< HEAD
+                        <li><a href="/">Projects</a></li>
+                        <li><a href="/">About Us</a></li>
+                        <li><a href="/">Contact</a></li>
+=======
                         <li><a href="/projects">Projects</a></li>
                         <li><a href="/#about_us">About Us</a></li>
                         <li><a href="/#contact_sec">Contact</a></li>
+>>>>>>> 6ccbd3c93720731f223bf527b9b2f1769a53cab2
                     </ul>
                 </div>
                 <div class="side-right">
@@ -57,21 +63,16 @@
                 </div>
         </nav>
     </header>
-
     {{{body}}}
     </body>
 <script>
     function showSidebar() {
         const sidebar = document.querySelector(".sidebar");
-        const menu1 = document.getElementById("menu1");
         sidebar.style.display = "flex"
-        menu1.style.display = "none"
     }
     function hideSidebar() {
         const sidebar = document.querySelector(".sidebar");
-        const menu1 = document.getElementById("menu1");
         sidebar.style.display = "none"
-        menu1.style.display = "block"
     }
 </script>
 

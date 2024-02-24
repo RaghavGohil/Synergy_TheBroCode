@@ -3,6 +3,13 @@
     Project Viewer
 </h1>
 <h2>{{projectname}}</h2>
+<form method="post" enctype="multipart/form-data">
+  <input type="file" name="file">
+  <button type="submit">Upload File</button>
+</form>
+<form method="get" action="/viewProject/hi">
+  <button type="submit" id="submitButton">Get File</button>
+</form>
 <div id="viewer">
     <embed src="/pdf/Synergy.pdf" type="application/pdf" width="100%" height="600px" />
 </div>
