@@ -16,7 +16,8 @@
         <nav>
             <div class="navbar">
                 <div class="nav-left">
-                    LOGO
+                    <a href="/"><img src="/images/logo.png" alt="logo here" width="200px"></a>
+                    
                 </div>
                 <div class="nav-mid hideOnMobile">
                     <ul>
@@ -39,7 +40,7 @@
             </div>
             <div class="sidebar">
                 <div class="side-left">
-                    <li onclick=hideSidebar() id="side-menu"><i class="fa-solid fa-bars"></i></li>
+                    <li onclick=hideSidebar() id="side-menu"><i class="fa-solid fa-bars"></i>Menu</li>
                 </div>
                 <div class="side-mid">
                     <ul>
@@ -58,19 +59,28 @@
         </nav>
     </header>
     {{{body}}}
-    
-    <footer>&copy;The Bro Code Solutions LLC 2024. All Rights Reserved.
-        {{!-- <span>Privacy Policy</span> --}}
-    </footer>
-    </body>
+
+    {{!-- <footer>
+        <div class="footer-end">
+            &copy;The Bro Code Solutions LLC 2024. All Rights Reserved.
+        </div>
+    </footer> --}}
+</body>
 <script>
     function showSidebar() {
         const sidebar = document.querySelector(".sidebar");
+<<<<<<< HEAD
         sidebar.style.display = "flex"
+=======
+        const menu1 = document.getElementById("menu1");
+        sidebar.style.visibility = "visible"
+        menu1.style.visibility = "hidden"
+>>>>>>> bb8afac27e7f5e7468d5ccb2c4d05f2dd77222b0
     }
     function hideSidebar() {
         const sidebar = document.querySelector(".sidebar");
-        sidebar.style.display = "none"
+        sidebar.style.visibility = "hidden"
+        menu1.style.visibility = "visible"
     }
 </script>
 
