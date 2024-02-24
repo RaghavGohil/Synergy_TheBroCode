@@ -29,15 +29,23 @@ body {
 .nav-mid ul {
     list-style-type: none;
     display: flex;
+    height: 100%;
 }
 
 .nav-mid ul li {
-    padding: 0 15px;
+    padding: 10px 15px;
+    height: 100%;
 }
 
 .navbar a {
     text-decoration: none;
     color: #000;
+}
+
+.nav-mid li:hover {
+    background-color: rgba(151, 151, 151, 0.806);
+    border-radius: 5px;
+    transform: scale(1.05);
 }
 
 .nav-right {
@@ -52,6 +60,10 @@ body {
     padding: 0 5px;
 }
 
+.nav-rig a:hover {
+    text-decoration: underline;
+}
+
 .sidebar {
     position: fixed;
     top: 0;
@@ -59,7 +71,7 @@ body {
     width: 250px;
     height: 100vh;
     z-index: 999;
-    background-color: rgb(183, 183, 183);
+    background-color: rgba(183, 183, 183, 0.856);
     display: none;
     flex-direction: column;
     align-items: flex-start;
@@ -71,16 +83,26 @@ body {
     padding-left: 10px;
 }
 
-.sidebar ul {
-    list-style-type: none;
+.side-mid {
+    width: 100%;
 }
 
-.sidebar li {
+.side-mid ul {
+    list-style-type: none;
+    width: 100%;
+}
+
+.side-mid li {
     padding: 10px 0px 10px 10px;
     width: 100%;
 }
 
+.side-mid li:hover {
+    background-color: rgba(130, 130, 130, 0.856);
+}
+
 .sidebar a {
+    width: 100%;
     text-decoration: none;
     color: #000;
 }
@@ -89,7 +111,7 @@ body {
     padding: 5px 10px;
 }
 
-#menu {
+#menu1 {
     list-style-type: none;
     position: absolute;
     bottom: 35%;
@@ -98,7 +120,7 @@ body {
     display: none;
 }
 
-#side-menu {
+#side-menu1 {
     list-style-type: none;
     align-items: flex-start;
     cursor: pointer;
@@ -109,7 +131,7 @@ body {
     .hideOnMobile {
         display: none;
     }
-    #menu {
+    #menu1 {
         display: block;
     }
 }

@@ -21,7 +21,7 @@
                 <div class="nav-mid hideOnMobile">
                     <ul>
                         <li><a href="/">Home</a></li>
-                        <li><a href="/">Projects</a></li>
+                        <li><a href="/projects">Projects</a></li>
                         <li><a href="/">About Us</a></li>
                         <li><a href="/">Contact</a></li>
                     </ul>
@@ -32,19 +32,19 @@
                         <a href="/">Register</a>/
                         <a href="/">Sign In</a>
                     </div>
-                    <li onclick=showSidebar() id="menu"><i class="fa-solid fa-bars"></i></li>
+                    <li onclick=showSidebar() id="menu1"><i class="fa-solid fa-bars"></i></li>
                 </div>
 
 
             </div>
             <div class="sidebar">
                 <div class="side-left">
-                    <li onclick=hideSidebar() id="side-menu"><i class="fa-solid fa-bars"></i></li>
+                    <li onclick=hideSidebar() id="side-menu1"><i class="fa-solid fa-bars"></i></li>
                 </div>
                 <div class="side-mid">
                     <ul>
                         <li><a href="/">Home</a></li>
-                        <li><a href="/">Projects</a></li>
+                        <li><a href="/projects">Projects</a></li>
                         <li><a href="/">About Us</a></li>
                         <li><a href="/">Contact</a></li>
                     </ul>
@@ -62,11 +62,15 @@
 <script>
     function showSidebar() {
         const sidebar = document.querySelector(".sidebar");
+        const menu1 = document.getElementById("menu1");
         sidebar.style.display = "flex"
+        menu1.style.display = "none"
     }
     function hideSidebar() {
         const sidebar = document.querySelector(".sidebar");
+        const menu1 = document.getElementById("menu1");
         sidebar.style.display = "none"
+        menu1.style.display = "block"
     }
 </script>
 
