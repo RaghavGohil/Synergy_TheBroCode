@@ -1,7 +1,62 @@
+#hero {
+    width: 100%;
+    height: 88vh;
+    position: relative;
+}
+
 #hero img{
-    
+    width: 100%;
+    height: 100%;
+}
+
+.home-head {
+    position: absolute;
+    top: 49%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    color: #fff;
+    font-size: 1.8rem;
+}
+
+.home-head h1 {
+    margin-bottom: 10px;
+}
+
+.home-head h3 {
+    padding-top: 20px;
 }
 
 #contact h2{
-         text-align: center;
+    text-align: center;
+}
+
+#about_us {
+    text-align: center;
+    font-size: 1.2rem;
+
+}
+
+.contact-sec {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.contact-icon {
+    display: flex;
+    justify-content: center;
+}
+
+.comtact-icon i {
+    padding: 10px;
+}
+
+.contact-icon a {
+    padding: 5px 3px;
 }
