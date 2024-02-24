@@ -14,6 +14,7 @@ app.set('view engine', 'handlebars');
 app.set('views', path.join(__dirname,'views'));
 
 // routes
+
 app.use('/', require('./routes/loginRoute'));
 app.use('/', require('./routes/homeRoute'));
 app.use('/', require('./routes/projectsRoute'));
