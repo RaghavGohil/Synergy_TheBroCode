@@ -39,7 +39,7 @@
             </div>
             <div class="sidebar">
                 <div class="side-left">
-                    <li onclick=hideSidebar() id="side-menu"><i class="fa-solid fa-bars"></i></li>
+                    <li onclick=hideSidebar() id="side-menu"><i class="fa-solid fa-bars"></i>Menu</li>
                 </div>
                 <div class="side-mid">
                     <ul>
@@ -58,11 +58,13 @@
         </nav>
     </header>
     {{{body}}}
-    
-    <footer>&copy;The Bro Code Solutions LLC 2024. All Rights Reserved.
-        {{!-- <span>Privacy Policy</span> --}}
-    </footer>
-    </body>
+
+    {{!-- <footer>
+        <div class="footer-end">
+            &copy;The Bro Code Solutions LLC 2024. All Rights Reserved.
+        </div>
+    </footer> --}}
+</body>
 <script>
     function showSidebar() {
         const sidebar = document.querySelector(".sidebar");
@@ -73,6 +75,7 @@
     function hideSidebar() {
         const sidebar = document.querySelector(".sidebar");
         sidebar.style.display = "none"
+        menu1.style.display = "block"
     }
 </script>
 
