@@ -29,56 +29,60 @@
 .home-head h3 {
     padding-top: 20px;
 }
-
-#about_us{
-    padding: 10px;
-    position: relative;
-    z-index: 1;
-    background-image: url("/images/hero_img3.jpg");
-    color: #fff;
-}
-
-#about_us {
-    text-align: center;
-    font-size: 1.2rem;
-    position: relative;
-}
-
-
-
-/* #contact_us div{
-    padding: 20px;
-    font-size: 20px;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-#contact_us div h2{
-    padding: 10px;
-    color: #fff;
-}
-
-#contact_us div div div a{
-    display: inline;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-#contact_us div div{
-    height: 12%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#contact_us div div ul li{
-    font-size: 30px;
-    display: inline;
-    text-decoration-style: none;
-    padding-inline: 5px;
-    color: white;
+/* #about_us{
+    
 } */
 
-
+.about_us {
+    
+    font-size: 1.2rem;
+    position: relative;
+    padding: 0;
+    width:100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+    background-image: url("/images/texture.jpg");
+    color: #0b0a0a;
+    
+}
+.about_us h2{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 4rem;
+    margin-top: 20px;
+    color: #131313b6;
+}
+.mainpara{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+    
+}
+.abpara{
+    width: 35%;
+    background-color: #ffffffa0;
+    border-radius: 40px;
+    padding: 3%;
+    font-size: 1.3rem;
+    transition: all ease 0.2s;
+    box-shadow: 2px 2px 2px #ffffffa0;
+}
+.abpara h4{
+    font-size: 1.5rem;
+    padding-bottom: 20px;
+}
+.abpara:hover{
+    transform: scale(1.04);
+}
+#contact-sec{
+    background-image: url("/images/texture.jpg") ;
+    z-index: 1 ;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
 
 
 #contact{
@@ -93,7 +97,7 @@
     padding: 10px;
     text-align: center;
     font-size: 50px;
-    color: #000;
+    color: #131313b6;
 }
 
 iframe{
@@ -103,9 +107,9 @@ iframe{
 }
 
 .contact-card {
-    border: 1px solid #ccc;
+    /* border: 1px solid #ccc;
     border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
+    border-top-right-radius: 8px; */
     padding: 16px;
     display: block;   
 }
@@ -130,6 +134,7 @@ iframe{
     justify-content: center;
     align-items: center;
     padding: 20px;
+    font-size:1.5rem;
 }
 
 #_mail{
@@ -138,6 +143,7 @@ iframe{
 }
 
 .contact-card li{
+    
     font-size: 30px;
     text-decoration-style: none;
     padding-top: 10px;
@@ -148,6 +154,7 @@ iframe{
 .contact-card li a{
     text-decoration: none;
     color: black;
+    display: inline block;    
 }
 
 #contact_sec i{
