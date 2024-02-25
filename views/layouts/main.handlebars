@@ -17,7 +17,7 @@
             <div class="navbar">
                 <div class="nav-left">
                     <a href="/"><img src="/images/logo.png" alt="logo here" width="200px"></a>
-                    
+
                 </div>
                 <div class="nav-mid hideOnMobile">
                     <ul>
@@ -66,6 +66,7 @@
         </div>
     </footer> --}}
 </body>
+
 <script>
     function showSidebar() {
         const sidebar = document.querySelector(".sidebar");
@@ -78,6 +79,21 @@
         sidebar.style.visibility = "hidden"
         menu1.style.visibility = "visible"
     }
+
+    let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}
+            slides[slideIndex-1].style.display = "block";
+            setTimeout(showSlides, 4000);
+        }
 </script>
 
 </html>
