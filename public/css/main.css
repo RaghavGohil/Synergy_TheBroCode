@@ -44,8 +44,9 @@ html {
     overflow: hidden;
 }
 
-.nav-left img{
-
+#login{
+    background: transparent;
+    border: none;
 }
 
 .nav-mid ul {
