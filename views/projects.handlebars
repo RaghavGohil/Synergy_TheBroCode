@@ -65,32 +65,41 @@
         <span>Projects</span>
     </div>
     <div class="proj-filter">
-
+        <select name="selectDoc" id="selectDoc">
+            <option hidden>Type</option>
+            <option value=".pdf">PDF</option>
+            <option value=".doc">DOC</option>
+            <option value=".dwg">DWG</option>
+            <option value=".jpg">JPG</option>
+        </select>
+        <i class="fa-solid fa-caret-down"></i>
     </div>
+
     {{!-- <div class="proj-table"> --}}
         <table class="proj-table">
             <tr>
-                <th style = "width: 50%">Name</th>
-                <th style = "width: 30%">Last Modified</th>
-                <th style = "width: 20%">File Size</th>
+                <th style="width: 50%">Name</th>
+                <th style="width: 30%">Last Modified</th>
+                <th style="width: 20%">File Size</th>
             </tr>
             <tr class="proj-tblhover">
-                <td style = "width: 50%">Project 1</td>
-                <td style = "width: 30%">xyz</td>
-                <td style = "width: 20%">xyzmb</td>
+                <td style="width: 50%">Project 1</td>
+                <td style="width: 30%">xyz</td>
+                <td style="width: 20%">xyzmb</td>
             </tr>
             <tr class="proj-tblhover">
-                <td style = "width: 50%">Project 2</td>
-                <td style = "width: 30%">xyz</td>
-                <td style = "width: 20%">xyzmb</td>
+                <td style="width: 50%">Project 2</td>
+                <td style="width: 30%">xyz</td>
+                <td style="width: 20%">xyzmb</td>
             </tr>
             <tr class="proj-tblhover">
-                <td style = "width: 50%">Project 3</td>
-                <td style = "width: 30%">xyz</td>
-                <td style = "width: 20%">xyzmb</td>
+                <td style="width: 50%">Project 3</td>
+                <td style="width: 30%">xyz</td>
+                <td style="width: 20%">xyzmb</td>
             </tr>
         </table>
-    {{!-- </div> --}}
+        {{!--
+    </div> --}}
 </div>
 <script>
     function showprojSidebar() {
