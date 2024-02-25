@@ -5,64 +5,7 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
 
-
-
-{{!-- <div class="container-fluid">
-    <div class="row flex-nowrap">
-        <div id="projlbar" class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 ">
-            <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
-                <hr>
-                <div class="dropdown pb-4">
-                    <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
-                        id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src="/images/humraphotu.jpg" alt="hugenerd" width="30" height="30" class="rounded-circle">
-                        <span class="d-none d-sm-inline mx-1">User</span>
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
-
-                        <li><a class="dropdown-item" href="#">Settings</a></li>
-                        <li><a class="dropdown-item" href="#">Profile</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">Sign out</a></li>
-                    </ul>
-                </div>
-                <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start">
-                    <li id="projmenu" class="nav-item">
-                        <a href="#" id="addproj" class="projmenu1">
-                            <i class="bi bi-pencil-square"></i> <span class="ms-1 d-none d-sm-inline">New Project</span>
-                        </a>
-                    </li>
-                    <li id="projmenu" class="nav-item">
-                        <a href="#" class="projmenu1">
-                            <i class="bi bi-clock-history"></i> <span class="ms-1 d-none d-sm-inline">Recents</span>
-                        </a>
-                    </li>
-                    <li id="projmenu" class="nav-item">
-                        <a href="#" class="projmenu1">
-                            <i class="bi bi-journals"></i> <span class="ms-1 d-none d-sm-inline">Projects</span>
-                        </a>
-                    </li>
-
-                    <li id="projmenu" class="nav-item">
-                        <a href="#" class="projmenu1">
-                            <i class=" bi bi-star-fill"></i> <span class="ms-1 d-none d-sm-inline">Favorites</span>
-                        </a>
-                    </li>
-
-                    <li id="projmenu" class="nav-item">
-                        <a href="#" class="projmenu1">
-                            <i class="bi bi-trash-fill"></i> <span class="ms-1 d-none d-sm-inline">Trash</span> </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-    </div>
-
-</div> --}}
-
+{{!-- <img src="/images/texture.jpg" class="proj-bgimg"> --}}
 <div class="proj-sidebar">
     {{!-- mobile big sidebar --}}
     <div id="mobile-newproj" class="projhideOnMobile hideprojsidebar">
@@ -119,35 +62,44 @@
         <button><i class="fa-solid fa-magnifying-glass"></i></button>
     </div>
     <div class="proj-location">
-
+        <span>Projects</span>
     </div>
     <div class="proj-filter">
-
+        <select name="selectDoc" id="selectDoc">
+            <option hidden>Type</option>
+            <option value=".pdf">PDF</option>
+            <option value=".doc">DOC</option>
+            <option value=".dwg">DWG</option>
+            <option value=".jpg">JPG</option>
+        </select>
+        <i class="fa-solid fa-caret-down"></i>
     </div>
-    <div class="proj-table">
-        <table>
+
+    {{!-- <div class="proj-table"> --}}
+        <table class="proj-table">
             <tr>
-                <th class="col-1">Name</th>
-                <th class="col-2">Last Modified</th>
-                <th class="col-3">File Size</th>
+                <th style="width: 50%">Name</th>
+                <th style="width: 30%">Last Modified</th>
+                <th style="width: 20%">File Size</th>
             </tr>
-            <tr>
-                <td class="col-1">Project 1</td>
-                <td class="col-2">xyz</td>
-                <td class="col-3">xyzmb</td>
+            <tr class="proj-tblhover">
+                <td style="width: 50%">Project 1</td>
+                <td style="width: 30%">xyz</td>
+                <td style="width: 20%">xyzmb</td>
             </tr>
-            <tr>
-                <td class="col-1">Project 2</td>
-                <td class="col-2">xyz</td>
-                <td class="col-3">xyzmb</td>
+            <tr class="proj-tblhover">
+                <td style="width: 50%">Project 2</td>
+                <td style="width: 30%">xyz</td>
+                <td style="width: 20%">xyzmb</td>
             </tr>
-            <tr>
-                <td class="col-1">Project 1</td>
-                <td class="col-2">xyz</td>
-                <td class="col-3">xyzmb</td>
+            <tr class="proj-tblhover">
+                <td style="width: 50%">Project 3</td>
+                <td style="width: 30%">xyz</td>
+                <td style="width: 20%">xyzmb</td>
             </tr>
         </table>
-    </div>
+        {{!--
+    </div> --}}
 </div>
 <script>
     function showprojSidebar() {
