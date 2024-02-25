@@ -14,6 +14,11 @@ const userSchema = new mongoose.Schema({
     type: String,
     required: true
   },
+  projectIDs:
+  {
+    type: Array,
+    required: false
+  },
   isAdmin: {
     type: Boolean,
     default:false,

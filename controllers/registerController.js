@@ -15,6 +15,7 @@ module.exports.registerPost = async (req, res) => {
         username: req.body.username,
         email: req.body.email,
         password: req.body.password,
+        projectIDs: [],
         isAdmin: false
       });
       await user.save();

@@ -1,8 +1,7 @@
 const express = require('express');
 const router = express.Router();
+const {projectsGet} = require('../controllers/projectsController');
 
-router.get('/projects', (req, res) => {
-    res.render('projects', {data: 'Projects page'});
-});
+router.get('/projects', projectsGet);
 
 module.exports = router;

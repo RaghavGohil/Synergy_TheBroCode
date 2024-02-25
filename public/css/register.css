@@ -40,10 +40,10 @@ body{
 }
 form{
     margin:auto;
-    margin-top: 50px;
+    margin-top: 8%;
     margin-bottom: 100px;
-    max-height: 100%;
-    width: 350px;
+    max-height: 1000px;
+    width: 500px;
     background-color: rgba(255,255,255,0.13);
     border-radius: 10px;
     backdrop-filter: blur(10px);

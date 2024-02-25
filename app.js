@@ -22,10 +22,11 @@ app.use(expressSession({
   resave: false,
   saveUninitialized: true
 }));
+
 app.use((req, res, next) => {
-  req.isLoggedIn = req.session.isLoggedIn;
-  next();
-})
+    res.locals.isLoggedIn = { message: req.session.isLoggedIn };
+    next();
+});
 
 // handlebars
 app.engine('handlebars', engine());

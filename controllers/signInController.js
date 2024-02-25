@@ -12,12 +12,12 @@ module.exports.signInPost = async (req, res) => {
   try{
     const user = await User.findOne({ username : req.body.username});
     if (!user) {
-      return res.status(401).send('Username not available');
+      return res.redirect('/signIn');
     }
 
     const isMatch = (req.body.password === user.password);
     if (!isMatch) {
-      return res.status(401).send('Invalid username or password');
+      return res.redirect('/signIn');
     }
 
     req.session.isLoggedIn = true;
