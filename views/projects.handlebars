@@ -82,21 +82,13 @@
                 <th style="width: 30%">Last Modified</th>
                 <th style="width: 20%">File Size</th>
             </tr>
+            {{#each projects}}
             <tr class="proj-tblhover">
-                <td style="width: 50%">Project 1</td>
-                <td style="width: 30%">xyz</td>
-                <td style="width: 20%">xyzmb</td>
+                <td style="width: 50%">{{this.projectName}}</td>
+                <td style="width: 30%">{{this.lastUpdated}}</td>
+                <td style="width: 20%">20kb</td>
             </tr>
-            <tr class="proj-tblhover">
-                <td style="width: 50%">Project 2</td>
-                <td style="width: 30%">xyz</td>
-                <td style="width: 20%">xyzmb</td>
-            </tr>
-            <tr class="proj-tblhover">
-                <td style="width: 50%">Project 3</td>
-                <td style="width: 30%">xyz</td>
-                <td style="width: 20%">xyzmb</td>
-            </tr>
+            {{/each}}
         </table>
         {{!--
     </div> --}}

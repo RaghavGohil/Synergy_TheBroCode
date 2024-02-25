@@ -8,7 +8,6 @@ mongoose.connect(databaseUrl)
 .then(() => {console.log('projects connected to MongoDB.')})
 
 module.exports.projectsGet = async (req, res) => {
-    const projects = await Projects.find({});
-    // res.render('projects', {data: 'Projects page' , projects: projects});
-    res.json({data: 'Projects page' , projects: projects});
+    const projects = await Projects.find({}).lean();
+    res.render('projects', {data: 'Projects page' , projects: projects});
 }

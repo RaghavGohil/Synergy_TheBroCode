@@ -181,3 +181,9 @@ html {
         visibility: visible;
     }
 }
+
+.profile-button
+{
+    background-color: transparent;
+    border: none;
+}

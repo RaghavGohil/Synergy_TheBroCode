@@ -28,6 +28,12 @@ app.use((req, res, next) => {
     next();
 });
 
+app.get('/logout', (req, res) => {
+    req.session.isLoggedIn = false;
+    req.session.destroy();
+    res.redirect('/signIn');
+});
+
 // handlebars
 app.engine('handlebars', engine());
 app.set('view engine', 'handlebars');
