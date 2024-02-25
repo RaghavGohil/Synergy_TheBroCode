@@ -248,6 +248,7 @@ body {
     border: none;
     appearance: none;
     margin-left: 20px;
+    font-size: 1rem;
     background-color: #e8e8e8;
 }
 
@@ -265,10 +266,14 @@ body {
     padding-top: 2px;
 }
 
+#selectDoc:focus-visible{
+    outline: none;
+}
+
 .proj-table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
-    width: 100%;
+    width: 90%;
     margin: 0 0 0 20px;
     overflow: hidden;
 }

@@ -71,7 +71,7 @@
 /* Fading animation */
 .fade {
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 2s;
 }
 
 @keyframes fade {
@@ -112,6 +112,7 @@
     overflow: hidden;
     z-index: 1;
     background-image: url("/images/texture.jpg");
+    background-size: cover;
     color: #0b0a0a;
     
 }
@@ -145,98 +146,63 @@
 .abpara:hover{
     transform: scale(1.04);
 }
-#contact-sec{
-    background-image: url("/images/texture.jpg") ;
-    z-index: 1 ;
-    background-size: cover;
+.contact-sec {
     height: 100%;
     width: 100%;
-    overflow: hidden;
+    position: relative;
+    background-image: url(/images/texture.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-
-#contact{
+.contact-sec img {
     width: 100%;
     height: 100%;
+}
+
+.contact-sec h2 {
+    margin-top: 30px;
+    font-size: 4rem;
+}
+
+.contact-main {
+    width: 100%;
+    margin-top: 50px;
     display: flex;
     justify-content: space-evenly;
-    overflow: hidden;
+
 }
 
-#contact_sec h1{
-    padding-top: 10px;
+.contact {
+    width: 18%;
+    height: 300px;
+    background-color: #ffffffa0;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
     text-align: center;
-    font-size: 3.5rem;
-    color: #131313b6;
+}
+
+.contact i {
+    font-size: 3rem;
+    margin-bottom: 10px;
 }
 
 iframe{
     box-sizing: border-box;
     display: block;
     box-shadow: 2px #fff;
+    border-radius: 10px;
 }
 
-.contact-card {
-    /* border: 1px solid #ccc;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px; */
-    padding: 16px;
-    display: block;   
-}
 
-.contact-card h2{
-    padding: 10px;
-}
-
-#contact>div{
-    text-align: center;
-}
-
-#contacts{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
-#mail{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    font-size:1.5rem;
-}
-
-#_mail{
-    text-decoration: none;
-    color: black;
-}
-
-.contact-card li{
-    
-    font-size: 30px;
-    text-decoration-style: none;
-    padding-top: 10px;
-    color: white;
-    align-items: center;
-}
-
-.contact-card li a{
-    text-decoration: none;
-    color: black;
-    display: inline block;    
-}
-
-#contact_sec i{
-    color: #000;
-}
 @media(max-width: 580px){
     .mainpara{
-        flex-direction: column;
-    }
-}
-@media(max-width: 940px){
-    #contact{
         flex-direction: column;
     }
 }

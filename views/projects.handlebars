@@ -25,15 +25,15 @@
         </div>
     </div>
     {{!-- mobile short sidebar --}}
-    <div class="proj-hidesidebar projDisplayOnMobile hideprojsidebar">
+    <div class="proj-hidesidebar projDisplayOnMobile">
         <div class="proj-menubtn">
-            <li onclick=showprojSidebar() id="side-menu1"><i class="fa-solid fa-bars"></i></li>
+            <li class="hideprojsidebar" onclick=showprojSidebar() id="side-menu1"><i class="fa-solid fa-bars"></i></li>
         </div>
-        <div id="sidenewproj">
+        <div class="hideprojsidebar" id="sidenewproj">
             <a href="/"><i class="bi bi-pencil-square"></i> </a>
         </div>
         <div class="proj-sidemenu">
-            <ul>
+            <ul class="hideprojsidebar">
                 <li><a href="/"><i class="bi bi-clock-history"></i></a></li>
                 <li><a href="/"><i class="bi bi-journals"></i></a></li>
                 <li><a href="/"><i class=" bi bi-star-fill"></i></a></li>
