@@ -46,4 +46,4 @@ app.use('/', require('./routes/homeRoute'));
 app.use('/', require('./routes/projectsRoute'));
 app.use('/', require('./routes/viewProjectRoute'));
 
-app.listen(port,() => console.log(`Server is running at port${port}`));
+app.listen(port,() => console.log(`Server is not running at port${port}`));
